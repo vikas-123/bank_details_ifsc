@@ -34,14 +34,14 @@ app.get("/", (req, res) => {
 
 app.post("/ifsc",(req,res)=>{
 
-   Details.find({ifsc:req.body.ifsc_code.toUpperCase()}, (err, posts) => {
+   Details.find({ifsc:req.body.ifsc_code.trim().toUpperCase()}, (err, posts) => {
       res.render('ifsc', { posts: posts})
    });
 });
 
 app.post("/city_name",(req,res)=>{
 
-   Details.find({city:req.body.b.city.toUpperCase(),bank_name:req.body.b.name.toUpperCase()}, (err, posts) => {
+   Details.find({city:req.body.b.city.trim().toUpperCase(),bank_name:req.body.b.name.trim().toUpperCase()}, (err, posts) => {
       res.render('name_branch', { posts: posts})
    });
 });
