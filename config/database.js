@@ -1,7 +1,7 @@
 if(process.env.NODE_ENV === 'production')
 {
 	module.exports= {mongoURI:
-		'mongodb://vikas:ucmmr65u@ds239682.mlab.com:39682/banking_ifsc'
+		'mongodb://user_name:password@ds239682.mlab.com:39682/banking_ifsc'
 
 	}
 }
