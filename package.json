@@ -1,0 +1,21 @@
+{
+  "name": "banking",
+  "version": "1.0.0",
+  "description": "find the bank details using ifsc code ",
+  "main": "app.js",
+  "scripts": {
+    "start":"node app.js"
+  },
+  "author": "vikas gupta",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.4",
+    "mongoose": "^5.2.12",
+    "nodemon": "^1.18.4",
+    "path": "^0.12.7"
+  }
+}
